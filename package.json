@@ -1,0 +1,22 @@
+{
+  "name": "maker-vs-virus-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass _sass/_styles.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harmoniemand/makerspace-wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/harmoniemand/makerspace-wordpress-theme#readme",
+  "dependencies": {
+    "@clr/ui": "^3.0.1",
+    "bootstrap": "^4.3.0",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0"
+  }
+}
