@@ -36,9 +36,9 @@ $posts = get_posts(array(
 
                             <tr>
                                 <td>
-                                    <a href="<?php echo get_permalink() ?>" ><?php echo get_the_title() ?></a>
+                                    <a href="<?php echo get_permalink() ?>"><?php echo get_the_title() ?></a>
                                     <br />&nbsp;<br />
-                                    
+
                                     <?php echo get_post_meta($post->ID, 'hub_contact_person', true) ?><br />
                                     <?php echo get_post_meta($post->ID, 'hub_email', true) ?><br />
                                     <?php echo get_post_meta($post->ID, 'hub_twitter', true) ?><br />
