@@ -66,7 +66,9 @@ $fields = array(
 );
 
 foreach ($fields as $field) {
-    update_post_meta($post_id, $field, $_POST[$field]);
+    if (isset($_POST[$field])) {
+        update_post_meta($post_id, $field, $_POST[$field]);
+    }
 }
 
 
