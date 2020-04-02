@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php require 'includes/navigation.php' ?>
-
 
 <section class="hero">
 
@@ -24,130 +22,126 @@
   </div>
 </section>
 
+<div class="bg-white">
+  <div class="clr-row">
 
-<div class="content-container">
-  <div class="content-area p-2">
-
-    <div class="clr-row">
-
-      <?php $about_hubs = get_page_by_path('about_hubs'); ?>
-      <div class="clr-col clr-col-sm-4 clr-offset-sm-2">
-        <div class="card">
-          <div class="card-img">
-            <img src="<?php echo get_the_post_thumbnail_url($about_hubs); ?>">
+    <?php $about_hubs = get_page_by_path('about_hubs'); ?>
+    <div class="clr-col clr-col-sm-4 clr-offset-sm-2">
+      <div class="card">
+        <div class="card-img">
+          <img src="<?php echo get_the_post_thumbnail_url($about_hubs); ?>">
+        </div>
+        <div class="card-block">
+          <div class="card-title">
+            <?php echo get_the_title($about_hubs); ?>
           </div>
-          <div class="card-block">
-            <div class="card-title">
-              <?php echo get_the_title($about_hubs); ?>
-            </div>
-            <div class="card-text">
+          <div class="card-text">
             <?php
-              $content_hubs = apply_filters('the_content', $about_hubs->post_content);
-              $content_hubs = htmlentities($content_hubs, null, 'utf-8');
-              $content_hubs = str_replace("&nbsp;", " ", $content_hubs);
-              $content_hubs = html_entity_decode($content_hubs);
-              echo $content_hubs;
-              ?>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a href="/hub-registration">
-              <button class="btn btn-sm btn-link">Hub registrieren</button>
-            </a>
-            <button class="btn btn-sm btn-link">Footer Action 2</button>
+            $content_hubs = apply_filters('the_content', $about_hubs->post_content);
+            $content_hubs = htmlentities($content_hubs, null, 'utf-8');
+            $content_hubs = str_replace("&nbsp;", " ", $content_hubs);
+            $content_hubs = html_entity_decode($content_hubs);
+            echo $content_hubs;
+            ?>
           </div>
         </div>
-      </div>
-
-      <?php $about_makers = get_page_by_path('about_makers'); ?>
-      <div class="clr-col clr-col-sm-4">
-        <div class="card">
-          <div class="card-img">
-            <img src="<?php echo get_the_post_thumbnail_url($about_makers); ?>">
-          </div>
-          <div class="card-block">
-            <div class="card-title">
-              <?php echo get_the_title($about_makers); ?>
-            </div>
-            <div class="card-text">
-              <?php
-              $content_makers = apply_filters('the_content', $about_makers->post_content);
-              $content_makers = htmlentities($content_makers, null, 'utf-8');
-              $content_makers = str_replace("&nbsp;", " ", $content_makers);
-              $content_makers = html_entity_decode($content_makers);
-              echo $content_makers;
-              ?>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a href="/hub-registration">
-              <button class="btn btn-sm btn-link">Maker registrieren</button>
-            </a>
-          </div>
+        <div class="card-footer">
+          <a href="/hub-registration">
+            <button class="btn btn-sm btn-link">Hub registrieren</button>
+          </a>
+          <button class="btn btn-sm btn-link">Footer Action 2</button>
         </div>
       </div>
-
-
-
     </div>
-    <div class="clr-row">
-      <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
 
-        <?php $page_i_need_material = get_page_by_path('i_need_material'); ?>
-        <div class="card">
-          <div class="card-img">
-            <img src="<?php echo get_the_post_thumbnail_url($page_i_need_material);  ?>" style="  object-fit: cover; height: 20vh;">
+    <?php $about_makers = get_page_by_path('about_makers'); ?>
+    <div class="clr-col clr-col-sm-4">
+      <div class="card">
+        <div class="card-img">
+          <img src="<?php echo get_the_post_thumbnail_url($about_makers); ?>">
+        </div>
+        <div class="card-block">
+          <div class="card-title">
+            <?php echo get_the_title($about_makers); ?>
           </div>
-          <div class="card-block">
-            <div class="card-title">
-              <?php echo get_the_title($page_i_need_material); ?>
-            </div>
-            <div class="card-text">
-              <?php
-              $content = apply_filters('the_content', $page_i_need_material->post_content);
-              $content = htmlentities($content, null, 'utf-8');
-              $content = str_replace("&nbsp;", " ", $content);
-              $content = html_entity_decode($content);
-              echo $content;
-              ?>
-            </div>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-sm btn-link">Footer Action 1</button>
-            <button class="btn btn-sm btn-link">Footer Action 2</button>
+          <div class="card-text">
+            <?php
+            $content_makers = apply_filters('the_content', $about_makers->post_content);
+            $content_makers = htmlentities($content_makers, null, 'utf-8');
+            $content_makers = str_replace("&nbsp;", " ", $content_makers);
+            $content_makers = html_entity_decode($content_makers);
+            echo $content_makers;
+            ?>
           </div>
         </div>
-
-      </div>
-
-
-    </div>
-
-    <div class="clr-row">
-      <div class="clr-col">
-
-        <?php include 'includes/map.php' ?>
-
+        <div class="card-footer">
+          <a href="/hub-registration">
+            <button class="btn btn-sm btn-link">Maker registrieren</button>
+          </a>
+        </div>
       </div>
     </div>
 
 
-
-    <div class="clr-row">
-      <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
-        <?php while (have_posts()) : the_post(); ?>
-
-          <h1><?php the_title() ?></h1>
-          <p>
-            <?php the_content(); ?>
-          </p>
-
-        <?php endwhile; ?>
-      </div>
-    </div>
 
   </div>
+  <div class="clr-row">
+    <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
+
+      <?php $page_i_need_material = get_page_by_path('i_need_material'); ?>
+      <div class="card">
+        <div class="card-img">
+          <img src="<?php echo get_the_post_thumbnail_url($page_i_need_material);  ?>" style="  object-fit: cover; height: 20vh;">
+        </div>
+        <div class="card-block">
+          <div class="card-title">
+            <?php echo get_the_title($page_i_need_material); ?>
+          </div>
+          <div class="card-text">
+            <?php
+            $content = apply_filters('the_content', $page_i_need_material->post_content);
+            $content = htmlentities($content, null, 'utf-8');
+            $content = str_replace("&nbsp;", " ", $content);
+            $content = html_entity_decode($content);
+            echo $content;
+            ?>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-sm btn-link">Footer Action 1</button>
+          <button class="btn btn-sm btn-link">Footer Action 2</button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="clr-row">
+    <div class="clr-col">
+
+      <?php include 'includes/map.php' ?>
+
+    </div>
+  </div>
+
+
+
+  <div class="clr-row">
+    <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
+      <?php while (have_posts()) : the_post(); ?>
+
+        <h1><?php the_title() ?></h1>
+        <p>
+          <?php the_content(); ?>
+        </p>
+
+      <?php endwhile; ?>
+    </div>
+  </div>
 </div>
+
 
 
 <?php get_footer() ?>

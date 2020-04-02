@@ -7,21 +7,31 @@ Tags:
 */
 
 @import "./../node_modules/@clr/ui/src/main.scss";
+// @import "./../node_modules/@clr/ui/src/dark-theme.scss";
 
 .p-2 {
     padding: 0.5rem;
 }
 
-.hero, .hero div {
+.bg-blue {
+    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
+}
+
+.bg-white {
+    background-color: #fff;;
+}
+
+.hero {
     color: #ffffff;
     text-align: center;
-    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
     padding-top: 50px;
 
     font-size: 1.38em;
     margin-bottom: 20px;
     font-weight: 300;
     line-height: 1.4em;
+
+    height: 80vh;
 }
 
 .hero a {
@@ -32,4 +42,8 @@ Tags:
 
 .hero {
     padding-bottom: 2rem;
+}
+
+.content-area {
+    // padding: 0 !important;
 }

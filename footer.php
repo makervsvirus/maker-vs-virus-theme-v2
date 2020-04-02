@@ -12,7 +12,7 @@
 
             <h6 class="text-uppercase" style="color: #404040;">Quick Links </h6>
 
-            
+
             <ul class="list-group">
 
                 <li class="list-group-item bg-transparent pl-0 text-light">
@@ -45,6 +45,7 @@
         </div>
     </div>
 
+</div>
 </div>
 
 

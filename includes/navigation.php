@@ -1,4 +1,4 @@
-<header class="header-6">
+<header class="header header-6">
     <div class="branding">
         <a href="/" class="nav-link">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.svg" style="height: 40px; margin-right: 1rem;" />
