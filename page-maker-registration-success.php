@@ -5,7 +5,7 @@
 <?php
 
 $google_api_key = get_option('google_geocoding_api_key');
-$address = $_POST['hub_street'] . " " . $_POST["hub_zip"] . " " . $_POST["hub_city"] . " " . $_POST["hub_state"] . " " . $_POST["hub_country"];
+$address = $_POST['maker_street'] . " " . $_POST["maker_zip"] . " " . $_POST["maker_city"] . " " . $_POST["maker_state"] . " " . $_POST["maker_country"];
 $url = "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&key=" . $google_api_key . "&address=" . urlencode($address);
 
 $header = array("Accept: application/json");
@@ -28,7 +28,7 @@ $long = $result->results[0]->geometry->location->lng;
 
 
 $random_password = wp_generate_password($length = 12, $include_standard_special_chars = true);
-$user_id = wp_create_user($_POST['hub_email'], $random_password, $_POST['hub_email']);
+$user_id = wp_create_user($_POST['maker_email'], $random_password, $_POST['maker_email']);
 
 $u = new WP_User($user_id);
 $u->remove_role('subscriber');
@@ -37,32 +37,29 @@ $u->add_role('author');
 
 $post_id = wp_insert_post(array(
     'post_author'           => $user_id,
-    'post_title'            => $_POST['hub_name'],
-    'post_type'             => 'mvv_hub',
-    'post_name'             => $_POST['hub_city'] . '_' . $_POST['hub_name']
+    'post_title'            => $_POST['maker_name'],
+    'post_type'             => 'mvv_maker',
+    'post_name'             => $_POST['maker_name'],
+    'post_content'          => isset( $_POST['maker_description'] ) ? $_POST['maker_description'] : null
 ));
 
 
-update_post_meta($post_id, "hub_lat", $lat);
-update_post_meta($post_id, "hub_long", $long);
+update_post_meta($post_id, "maker_lat", $lat);
+update_post_meta($post_id, "maker_long", $long);
 
 
 $fields = array(
-    "hub_email",
-    "hub_street",
-    "hub_zip",
-    "hub_city",
-    "hub_state",
-    "hub_country",
-    "hub_contact_person",
-    "hub_twitter",
-    "hub_phone",
-    "hub_address",
-    "hub_offer",
-    "hub_capacity",
-    "hub_description",
-    "hub_for_free",
-    "hub_for_net_cost"
+    "maker_email",
+    "maker_twitter",
+    "maker_phone",
+
+    "maker_street",
+    "maker_zip",
+    "maker_city",
+    "maker_state",
+    "maker_country",
+    
+    "maker_capacity",
 );
 
 foreach ($fields as $field) {
@@ -99,6 +96,7 @@ foreach ($fields as $field) {
                 <a href="https://join.slack.com/t/makervsvirus/shared_invite/zt-d0jrseye-16B4eZm1lkX~Hi8V7zFbiw" target="_blank">
                     <button class="btn btn-primary">Join Slack</button>
                 </a>
+
             </div>
         </div>
     </div>

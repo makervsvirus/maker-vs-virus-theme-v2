@@ -13515,3 +13515,6 @@ _:-ms-fullscreen .tab-content,
 
 .hero {
   padding-bottom: 2rem; }
+
+.c-pointer {
+  cursor: pointer; }

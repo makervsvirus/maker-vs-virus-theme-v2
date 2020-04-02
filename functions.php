@@ -31,7 +31,7 @@ function register_my_menus() {
     );
     add_theme_support( 'custom-header', $args );
     
-    add_theme_support( 'post-thumbnails', array ( 'page', 'post','work','devices', 'workshop' ));
+    add_theme_support( 'post-thumbnails', array ( 'page', 'post','work','devices', 'workshop', 'mvv_hub' ));
 }
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 

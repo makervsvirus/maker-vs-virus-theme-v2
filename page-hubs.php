@@ -35,7 +35,7 @@
                         <tbody>
                             <?php foreach ($posts as $post) : ?>
 
-                                <tr>
+                                <tr onclick="document.location.href = '<?php echo get_permalink() ?>'" class="c-pointer">
                                     <td>
                                         <a href="<?php echo get_permalink() ?>"><?php echo get_the_title() ?></a>
                                         <br />&nbsp;<br />
@@ -51,7 +51,7 @@
                                     </td>
                                     <td>
                                         <b>Wir bieten</b><br />
-                                        <?php echo get_post_meta($post->ID, 'hub_offer', true) ?>
+                                        <?php echo nl2br( get_post_meta($post->ID, 'hub_offer', true) ) ?>
 
                                         <br />&nbsp;<br />
                                         <b>Kapazitäten</b><br />
