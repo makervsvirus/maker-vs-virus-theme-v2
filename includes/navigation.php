@@ -25,11 +25,11 @@
     </div>
     <div class="header-actions" style="margin-right: 1rem;">
         <?php if (is_user_logged_in()) : ?>
-            <a href="wp-admin" class="nav-link" aria-label="settings">
+            <a href="/wp-admin" class="nav-link" aria-label="settings">
                 Zum Dashboard
             </a>
         <?php else : ?>
-            <a href="wp-admin" class="nav-link" aria-label="settings">
+            <a href="/wp-admin" class="nav-link" aria-label="settings">
                 Login
             </a>
         <?php endif; ?>
