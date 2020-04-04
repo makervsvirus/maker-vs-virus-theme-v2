@@ -120,6 +120,7 @@
   <div class="clr-row">
     <div class="clr-col">
 
+      <?php $show_makers = true; ?>
       <?php include 'includes/map.php' ?>
 
     </div>

@@ -18,13 +18,13 @@
         background: rgba(0, 0, 0, 0.5);
         display: none;
     }
-    
+
     .map-scroll {
         display: flex !important;
         justify-items: center;
         align-items: center;
         justify-content: center;
-        
+
         color: #fff;
         font-size: 2rem;
     }
@@ -55,12 +55,14 @@ $hubs = get_posts(array(
     'order'              => 'ASC'
 ));
 
-$makers = get_posts(array(
-    'post_type'         => 'mvv_maker',
-    'posts_per_page'    =>  -1,
-    'orderby'           => 'title',
-    'order'              => 'ASC'
-));
+if (isset($show_makers)) :
+    $makers = get_posts(array(
+        'post_type'         => 'mvv_maker',
+        'posts_per_page'    =>  -1,
+        'orderby'           => 'title',
+        'order'              => 'ASC'
+    ));
+endif;
 
 ?>
 
@@ -71,29 +73,32 @@ $makers = get_posts(array(
                 lat: "<?php echo get_post_meta($hub->ID, 'hub_lat', true) ?>",
                 long: "<?php echo get_post_meta($hub->ID, 'hub_long', true) ?>",
                 data: {
-
+                    name: "<?php echo get_the_title($hub->ID) ?>",
+                    permalink: "<?php echo get_permalink($hub->ID) ?>"
                 }
             },
         <?php endforeach; ?>
     ];
 
-    var makers = [
-        <?php foreach ($makers as $maker) : ?> {
-                lat: "<?php echo get_post_meta($maker->ID, 'maker_lat', true) ?>",
-                long: "<?php echo get_post_meta($maker->ID, 'maker_long', true) ?>",
-                data: {
+    <?php if (isset($show_makers)) : ?>
+        var makers = [
+            <?php foreach ($makers as $maker) : ?> {
+                    lat: "<?php echo get_post_meta($maker->ID, 'maker_lat', true) ?>",
+                    long: "<?php echo get_post_meta($maker->ID, 'maker_long', true) ?>",
+                    data: {
 
-                }
-            },
-        <?php endforeach; ?>
-    ];
+                    }
+                },
+            <?php endforeach; ?>
+        ];
+    <?php endif; ?>
 
 
     function whenClicked(e, feature, layer) {
         // e = event
         console.log(feature);
-        // You can make your ajax call declaration here
-        //$.ajax(... 
+
+        document.location.href = feature.permalink;
     }
 
     function onEachFeature(feature, layer) {
@@ -130,19 +135,21 @@ $makers = get_posts(array(
             onEachFeature: onEachFeature
         }).addTo(map);
 
-        var greenIcon = L.icon({
-            iconUrl: '<?php echo get_template_directory_uri() ?>/assets/images/marker-maker.png',
+        <?php if (isset($show_makers)) : ?>
+            var greenIcon = L.icon({
+                iconUrl: '<?php echo get_template_directory_uri() ?>/assets/images/marker-maker.png',
 
-            iconSize: [30, 30], // size of the icon
-            iconAnchor: [30, 30], // point of the icon which will correspond to marker's location
-            popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
-        });
+                iconSize: [30, 30], // size of the icon
+                iconAnchor: [30, 30], // point of the icon which will correspond to marker's location
+                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+            });
 
-        makers.forEach(maker => {
-            L.marker([maker.lat, maker.long], {
-                icon: greenIcon
-            }).addTo(map);
-        });
+            makers.forEach(maker => {
+                L.marker([maker.lat, maker.long], {
+                    icon: greenIcon
+                }).addTo(map);
+            });
+        <?php endif; ?>
 
 
         var redIcon = L.icon({
@@ -150,16 +157,20 @@ $makers = get_posts(array(
 
             iconSize: [30, 30], // size of the icon
             iconAnchor: [30, 30], // point of the icon which will correspond to marker's location
-            popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+            popupAnchor: [-15, -30] // point from which the popup should open relative to the iconAnchor
         });
 
         hubs.forEach(hub => {
-            L.marker([hub.lat, hub.long], {
-                icon: redIcon
-            }).addTo(map);
+            var marker = L.marker([hub.lat, hub.long], {
+                    icon: redIcon
+                })
+                .addTo(map);
+
+            var customPopup = "<span style='font-size: bold;'>" + hub.data.name + "</span><br /> <a href='" + hub.data.permalink + "'>Details anzeigen</a>";
+            marker.bindPopup(customPopup);
         });
 
-        
+
 
         map.scrollWheelZoom.disable();
 
