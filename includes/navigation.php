@@ -23,9 +23,15 @@
         <?php endforeach; ?>
 
     </div>
-    <div class="header-actions">
-        <a href="..." class="nav-link nav-icon" aria-label="settings">
-            <clr-icon shape="cog"></clr-icon>
-        </a>
+    <div class="header-actions" style="margin-right: 1rem;">
+        <?php if (is_user_logged_in()) : ?>
+            <a href="wp-admin" class="nav-link" aria-label="settings">
+                Zum Dashboard
+            </a>
+        <?php else : ?>
+            <a href="wp-admin" class="nav-link" aria-label="settings">
+                Login
+            </a>
+        <?php endif; ?>
     </div>
 </header>
