@@ -27,6 +27,14 @@
                             <?php echo get_post_meta($post->ID, 'hub_contact_person', true) ?><br />
                             <?php echo get_post_meta($post->ID, 'hub_email', true) ?><br />
                             <?php echo get_post_meta($post->ID, 'hub_twitter', true) ?><br />
+                            <br />
+
+                            <?php $slacklink =  get_post_meta($post->ID, 'hub_slack_channel_invite_link', true) ?>
+                            <?php if ( !empty( $slacklink ) ): ?>
+                            <a href="<?php echo $slacklink ?>">
+                                Zum Slack-Channel <?php echo get_post_meta($post->ID, 'hub_slack_channel', true) ?>
+                            </a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
