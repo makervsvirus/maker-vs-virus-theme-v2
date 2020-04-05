@@ -74,9 +74,9 @@
           </div>
         </div>
         <div class="card-footer">
-          <a href="/maker-registration">
-            <button class="btn btn-sm btn-link">Maker registrieren</button>
-          </a>
+          <!-- <a href="/maker-registration"> -->
+            <button class="btn btn-sm btn-link" disabled>Maker registrieren (noch nicht verfügbar)</button>
+          <!-- </a> -->
         </div>
       </div>
     </div>
@@ -107,8 +107,8 @@
           </div>
         </div>
         <div class="card-footer">
-          <button class="btn btn-sm btn-link">Footer Action 1</button>
-          <button class="btn btn-sm btn-link">Footer Action 2</button>
+          <!-- <button class="btn btn-sm btn-link">Footer Action 1</button>
+          <button class="btn btn-sm btn-link">Footer Action 2</button> -->
         </div>
       </div>
 
