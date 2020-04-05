@@ -97,8 +97,6 @@ endif;
     function whenClicked(e, feature, layer) {
         // e = event
         console.log(feature);
-
-        document.location.href = feature.permalink;
     }
 
     function onEachFeature(feature, layer) {

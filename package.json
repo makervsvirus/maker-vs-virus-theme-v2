@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-sass": "node-sass _sass/_styles.scss style.css",
+    "build-sass": "node-sass _sass/_styles.scss style.css --import-css true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,7 +14,9 @@
   },
   "homepage": "https://github.com/harmoniemand/makerspace-wordpress-theme#readme",
   "dependencies": {
+    "@clr/icons": "^3.1.0",
     "@clr/ui": "^3.0.1",
+    "@webcomponents/custom-elements": "^1.0.0",
     "bootstrap": "^4.3.0",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0"
