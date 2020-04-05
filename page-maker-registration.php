@@ -3,11 +3,19 @@
 <div class="bg-white">
 
     <div class="clr-row">
-        <div class="clr-col-lg-8 clr-offset-lg-2">
+        <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
             <?php while (have_posts()) : the_post(); ?>
+
                 <h1><?php the_title() ?></h1>
+                <p>
+                    <?php the_content(); ?>
+                </p>
+
             <?php endwhile; ?>
         </div>
+    </div>
+
+    <div class="clr-row">
         <div class="clr-col-lg-8 clr-offset-lg-2">
 
             <form action="/maker-registration-success" method="POST" class="clr-form">
@@ -16,7 +24,7 @@
 
                 <div style="margin-top: .5rem; display: flex; justify-content: center; align-items: center;">
                     <label class="" style="min-width: 150px;" for="maker_name">Name</label>
-                    
+
                     <div class="clr-control-container" style="margin-left: 1rem; width: 100%;">
                         <div class="clr-input-wrapper">
                             <input type="text" id="maker_name" name="maker_name" value="<?php echo $maker_name ?>" placeholder="Name" class="clr-input" style="width: 100%;">

@@ -69,3 +69,4 @@ show_admin_bar(true);
 function pll_e($text_idendifier) {
   echo $text_idendifier;
 }
+
