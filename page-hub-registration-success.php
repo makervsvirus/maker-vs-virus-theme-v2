@@ -71,7 +71,7 @@ foreach ($fields as $field) {
     }
 }
 
-sendMail("hub", $_POST);
+sendMail("hub", "welcome", "de", $_POST);
 
 
 ?>

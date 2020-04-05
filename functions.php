@@ -71,7 +71,7 @@ function pll_e($text_idendifier) {
 }
 
 function sendMail($type, $template, $lang, $variables) {
-  $tplContent = file_get_contents(get_template_directory() . "/emails/" . $template . "_" . $lang . ".tpl");
+  $tplContent = file_get_contents(get_template_directory() . "/emails/" . $type. "_". $template . "_" . $lang . ".tpl");
   $subject = substr($tplContent, strpos($tplContent, "<title>") + 7); $subject = substr($subject, 0, strpos($subject, "</"));
   foreach ($variables as $key => $value) {
     $tplContent = str_replace("#" . str_replace($type . "_", "", $key) . "#", $value, $tplContent);
