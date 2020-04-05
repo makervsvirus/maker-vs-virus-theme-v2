@@ -28,7 +28,7 @@
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
 
-	<meta name="test" content="foobar">
+	<meta name="test" content="01:31">
 
 </head>
 
