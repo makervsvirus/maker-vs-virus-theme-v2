@@ -11,12 +11,12 @@
 
         <div class="clr-row">
             <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
-
+<div class="card"><div class="card-block">
                 <h1><?php the_title() ?></h1>
                 <p>
                     <?php the_content(); ?>
                 </p>
-
+    </div></div>
             </div>
         </div>
     </div>

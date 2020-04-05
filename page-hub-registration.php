@@ -5,18 +5,20 @@
     <div class="clr-row">
         <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
             <?php while (have_posts()) : the_post(); ?>
+            <div class="card"><div class="card-block">
 
                 <h1><?php the_title() ?></h1>
                 <p>
                     <?php the_content(); ?>
                 </p>
-
+            </div></div>
             <?php endwhile; ?>
         </div>
     </div>
 
     <div class="clr-row">
         <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
+        <div class="card"><div class="card-block">
 
             <form action="/hub-registration-success" method="POST" class="clr-form">
 
@@ -164,6 +166,7 @@
                 </div>
 
             </form>
+            </div></div>
 
         </div>
     </div>
