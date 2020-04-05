@@ -68,7 +68,7 @@ foreach ($fields as $field) {
     }
 }
 
-
+sendMail("maker", $_POST);
 
 ?>
 
