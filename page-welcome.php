@@ -5,7 +5,7 @@
 
   <div class="clr-row">
     <div class="clr-col-12">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/images/big-logo.svg" height="400" />
+      <img src="<?php echo get_template_directory_uri() ?>/assets/images/big-logo.svg" style="height:400px; max-width:80vw; max-height: 60vh; margin-bottom: 40px" />
     </div>
 
     <div class="clr-col clr-col-sm-6 clr-offset-sm-3">
@@ -74,9 +74,9 @@
           </div>
         </div>
         <div class="card-footer">
-          <a href="/maker-registration">
-            <button class="btn btn-sm btn-link">Maker registrieren</button>
-          </a>
+          <!-- <a href="/maker-registration"> -->
+            <button class="btn btn-sm btn-link" disabled>Maker registrieren (noch nicht verfügbar)</button>
+          <!-- </a> -->
         </div>
       </div>
     </div>
@@ -107,8 +107,8 @@
           </div>
         </div>
         <div class="card-footer">
-          <button class="btn btn-sm btn-link">Footer Action 1</button>
-          <button class="btn btn-sm btn-link">Footer Action 2</button>
+          <!-- <button class="btn btn-sm btn-link">Footer Action 1</button>
+          <button class="btn btn-sm btn-link">Footer Action 2</button> -->
         </div>
       </div>
 
@@ -133,12 +133,14 @@
   <div class="clr-row">
     <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
       <?php while (have_posts()) : the_post(); ?>
+      <div class="card">
+        <div class="card-block">
 
         <h1><?php the_title() ?></h1>
         <p>
           <?php the_content(); ?>
         </p>
-
+    </div></div>
       <?php endwhile; ?>
     </div>
   </div>
