@@ -1,6 +1,6 @@
 			<footer>
 				<div class="text-light" style="background: black; font-size: 15px; line-height: 24px; padding-bottom: 70px; padding-top: 1rem;">
-					<div style="display: flex; padding-left: 10vw; padding-right: 10vw;">
+					<div class="footer" style="padding-left: 10vw; padding-right: 10vw;">
 						<div class="" style="margin: 0.5rem; width: 100%;">
 							<a href="/contact/" class="text-white">Kontakt</a>
 						</div>

@@ -5,7 +5,7 @@
 
     <div class="clr-row">
         <div class="clr-col-12">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/big-logo.svg" height="400" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/big-logo.svg" style="height:400px; max-width:80vw; max-height: 60vh; margin-bottom: 40px" />
         </div>
 
         <div class="clr-col clr-col-sm-6 clr-offset-sm-3">
@@ -129,6 +129,8 @@
 
     <div class="clr-row">
         <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
+        <div class="card">
+        <div class="card-block">
             <?php
             $page_welcome = get_page_by_path('welcome');
 
@@ -138,6 +140,7 @@
             $content = html_entity_decode($content);
             echo $content;
             ?>
+            </div></div>
         </div>
     </div>
 </div>

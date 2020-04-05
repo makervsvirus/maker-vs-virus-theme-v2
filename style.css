@@ -13497,7 +13497,9 @@ _:-ms-fullscreen .tab-content,
   background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7; }
 
 .bg-white {
-  background-color: #fff; }
+  background-color: #fff; 
+  padding-bottom: 50px;
+}
 
 .hero {
   color: #ffffff;
@@ -13519,3 +13521,17 @@ _:-ms-fullscreen .tab-content,
 
 .c-pointer {
   cursor: pointer; }
+
+.card-block {
+  overflow-x:hidden;
+}
+
+footer .footer {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .footer {
+      display: block;
+  }
+}
