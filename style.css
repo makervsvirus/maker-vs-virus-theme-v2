@@ -13497,7 +13497,8 @@ _:-ms-fullscreen .tab-content,
   background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7; }
 
 .bg-white {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 50px; }
 
 .hero {
   color: #ffffff;
@@ -13506,8 +13507,7 @@ _:-ms-fullscreen .tab-content,
   font-size: 1.38em;
   margin-bottom: 20px;
   font-weight: 300;
-  line-height: 1.4em;
-}
+  line-height: 1.4em; }
 
 .hero a {
   font-weight: bold;
@@ -13519,3 +13519,15 @@ _:-ms-fullscreen .tab-content,
 
 .c-pointer {
   cursor: pointer; }
+
+footer a:visited {
+  color: #999; }
+
+footer a:active {
+  color: #999; }
+
+footer a:hover {
+  color: #fff; }
+
+footer a:link {
+  color: #999; }

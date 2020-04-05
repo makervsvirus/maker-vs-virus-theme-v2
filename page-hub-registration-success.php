@@ -30,6 +30,9 @@ $long = $result->results[0]->geometry->location->lng;
 $random_password = wp_generate_password($length = 12, $include_standard_special_chars = true);
 $user_id = wp_create_user($_POST['hub_email'], $random_password, $_POST['hub_email']);
 
+$_POST['hub_password'] = $random_password;
+$_POST['hub_username'] = $_POST['hub_email'];
+
 $u = new WP_User($user_id);
 $u->remove_role('subscriber');
 $u->add_role('author');
@@ -91,7 +94,7 @@ sendMail("hub", "welcome", "de", $_POST);
             </div>
 
             <div class="clr-col-lg-8 clr-offset-lg-2 style=" margin-top: 1rem;">
-                Dein Username ist <?php echo $_POST["maker_email"]; ?> <br />
+                Dein Username ist <?php echo $_POST["hub_email"]; ?> <br />
                 Dein Passwort ist <?php echo $random_password; ?> <br />
             </div>
 
