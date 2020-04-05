@@ -117,11 +117,13 @@
 
   </div>
 
-  <div class="clr-row">
+  <div class="clr-row" style="margin-top: 2rem;">
     <div class="clr-col">
 
-      <?php $show_makers = true; ?>
-      <?php include 'includes/map.php' ?>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700"></iframe>
+
+      <?php // $show_makers = true; ?>
+      <?php // include 'includes/map.php' ?>
 
     </div>
   </div>

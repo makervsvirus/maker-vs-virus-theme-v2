@@ -2,9 +2,15 @@
 
 <div class="bg-white">
 
+    <div class="clr-row" style="">
+        <div class="clr-col">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700"></iframe>
+        </div>
+    </div>
 
 
-    <?php require 'includes/map.php' ?>
+    <?php // require 'includes/map.php' 
+    ?>
 
 
     <?php
