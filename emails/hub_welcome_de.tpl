@@ -15,5 +15,8 @@
             <p>Sofern noch nicht geschehen, kannst du dem Maker vs. Virus Slack unter <a href="https://join.slack.com/t/makervsvirus/shared_invite/zt-d78epuip-5c4U2EXbscuIIjflT~kAIQ">https://join.slack.com/t/makervsvirus/shared_invite/zt-d78epuip-5c4U2EXbscuIIjflT~kAIQ</a> beitreten.</p>
             <pp>Es grüßt dich, das Team von Maker vs. Virus</p>
         </div>
+        <div style="margin: 1.2rem 1.2rem 1.2rem 1.2rem; background-color:white; padding: 15px; font-size: 80%; font-family: 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial';">
+            Du erhältst diese E-Mail, weil Du oder eine andere Person sich mit dieser E-Mail-Adresse auf makervsvirus.org als Hub registriert hat. 
+        </div>
     </body>
 </html>

@@ -31,7 +31,7 @@
         <div class="card-img">
           <img src="<?php echo get_the_post_thumbnail_url($about_hubs); ?>">
         </div>
-        <div class="card-block">
+        <div class="card-block" style="height:200px">
           <div class="card-title">
             <?php echo get_the_title($about_hubs); ?>
           </div>
@@ -59,7 +59,7 @@
         <div class="card-img">
           <img src="<?php echo get_the_post_thumbnail_url($about_makers); ?>">
         </div>
-        <div class="card-block">
+        <div class="card-block" style="height:200px">
           <div class="card-title">
             <?php echo get_the_title($about_makers); ?>
           </div>

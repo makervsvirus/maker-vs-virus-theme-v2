@@ -1,11 +1,12 @@
 <header class="header header-6">
+    <button type="button" class="header-hamburger-trigger" aria-label="Open"><span></span></button>
     <div class="branding">
         <a href="/" class="nav-link">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.svg" style="height: 40px; margin-right: 1rem;" />
             <span class="title">Maker vs Virus</span>
         </a>
     </div>
-    <div class="header-nav">
+    <div class="header-nav clr-nav-level-1">
 
         <?php
         $menu_name = 'header-menu';
