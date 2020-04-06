@@ -15,7 +15,6 @@ Tags:
  *
  */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
-@import url(./../node_modules/@clr/icons/clr-icons.css);
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -364,7 +363,7 @@ textarea {
   --clr-popover-box-shadow-color: rgba(140, 140, 140, 0.25); }
 
 :root {
-  --clr-font: Metropolis, Avenir Next, Helvetica Neue, Arial, sans-serif;
+  --clr-font: San Francisco, Helvetica Neue, Helvetica, Arial;
   --clr-display-font: var(--clr-font);
   --clr-font-weight-light: 200;
   --clr-font-weight-regular: 400;
@@ -1887,8 +1886,8 @@ h1 {
   font-weight: 200;
   font-weight: var(--clr-h1-font-weight, 200);
   /* clr-h1-font-family */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-h1-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-h1-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 1.6rem;
   letter-spacing: normal;
   line-height: 2.4rem;
@@ -1903,8 +1902,8 @@ h2 {
   font-weight: 200;
   font-weight: var(--clr-h2-font-weight, 200);
   /* clr-h2-font-family */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-h2-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-h2-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 1.4rem;
   letter-spacing: normal;
   line-height: 2.4rem;
@@ -1919,8 +1918,8 @@ h3 {
   font-weight: 200;
   font-weight: var(--clr-h3-font-weight, 200);
   /* clr-h3-font-family */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-h3-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-h3-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 1.1rem;
   letter-spacing: normal;
   line-height: 1.2rem;
@@ -1935,8 +1934,8 @@ h4 {
   font-weight: 200;
   font-weight: var(--clr-h4-font-weight, 200);
   /* clr-h4-font-family */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-h4-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-h4-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 0.9rem;
   letter-spacing: normal;
   line-height: 1.2rem;
@@ -1951,8 +1950,8 @@ h5 {
   font-weight: 400;
   font-weight: var(--clr-h5-font-weight, 400);
   /* clr-h5-font-family */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-h5-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-h5-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 0.8rem;
   letter-spacing: 0.01em;
   line-height: 1.2rem;
@@ -1967,8 +1966,8 @@ h6 {
   font-weight: 500;
   font-weight: var(--clr-h6-font-weight, 500);
   /* clr-h6-font-family */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-h6-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-h6-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 0.7rem;
   letter-spacing: normal;
   line-height: 1.2rem;
@@ -1987,8 +1986,8 @@ body {
   line-height: 1.2rem;
   margin-bottom: 0;
   /* clr-font */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-font, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-font, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   margin-top: 0 !important; }
 
 body p {
@@ -2138,8 +2137,8 @@ html {
   color: #666666;
   color: var(--clr-global-font-color, #666666);
   /* clr-font */
-  font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--clr-font, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-family: var(--clr-font, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
   font-size: 125%; }
 
 @font-face {
@@ -5780,8 +5779,8 @@ a.label {
       font-weight: 200;
       font-weight: var(--clr-login-title-font-weight, 200);
       /* clr-login-title-font-family */
-      font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-family: var(--clr-login-title-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+      font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+      font-family: var(--clr-login-title-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
       font-size: 1.6rem;
       letter-spacing: normal;
       line-height: 1.8rem; }
@@ -5801,8 +5800,8 @@ a.label {
       font-weight: 200;
       font-weight: var(--clr-login-trademark-font-weight, 200);
       /* clr-login-trademark-font-family */
-      font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-family: var(--clr-login-trademark-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+      font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+      font-family: var(--clr-login-trademark-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
       font-size: 1.4rem;
       letter-spacing: normal; }
     .login-wrapper .login .subtitle {
@@ -5813,8 +5812,8 @@ a.label {
       color: black;
       color: var(--clr-login-subtitle-color, black);
       /* clr-login-subtitle-font-family */
-      font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-family: var(--clr-login-subtitle-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+      font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+      font-family: var(--clr-login-subtitle-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
       font-size: 1.1rem;
       letter-spacing: normal;
       line-height: 1.8rem; }
@@ -6030,8 +6029,8 @@ body.no-scrolling {
     color: var(--clr-modal-title-color, black);
     font-size: 1.1rem;
     /* clr-modal-title-font-family */
-    font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-    font-family: var(--clr-modal-title-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+    font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+    font-family: var(--clr-modal-title-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
     /* clr-modal-title-font-weight */
     font-weight: 200;
     font-weight: var(--clr-modal-title-font-weight, 200);
@@ -6206,8 +6205,8 @@ header,
       font-weight: 400;
       font-weight: var(--clr-header-title-font-weight, 400);
       /* clr-header-title-font-family */
-      font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-family: var(--clr-header-title-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+      font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+      font-family: var(--clr-header-title-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
       font-size: 0.8rem;
       letter-spacing: 0.01em;
       line-height: 3rem;
@@ -6804,8 +6803,8 @@ a.link-visited:link {
       font-weight: 500;
       font-weight: var(--clr-sidenav-header-font-weight, 500);
       /* clr-sidenav-header-font-family */
-      font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-family: var(--clr-sidenav-header-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+      font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+      font-family: var(--clr-sidenav-header-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
       font-size: 0.7rem;
       line-height: 1.2rem;
       letter-spacing: normal; }
@@ -6863,8 +6862,8 @@ a.link-visited:link {
       font-weight: 500;
       font-weight: var(--clr-sidenav-header-font-weight, 500);
       /* clr-sidenav-header-font-family */
-      font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-family: var(--clr-sidenav-header-font-family, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif);
+      font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+      font-family: var(--clr-sidenav-header-font-family, "San Francisco", "Helvetica Neue", "Helvetica", "Arial");
       font-size: 0.7rem;
       line-height: 1.2rem;
       letter-spacing: normal; }
@@ -13497,15 +13496,14 @@ _:-ms-fullscreen .tab-content,
   background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7; }
 
 .bg-white {
-  background-color: #fff; 
-  padding-bottom: 50px;
-}
+  background-color: #fff;
+  padding-bottom: 50px; }
 
 .hero {
   color: #ffffff;
   text-align: center;
   padding-top: 50px;
-  font-size: 1.38em;
+  font-size: 1.58em;
   margin-bottom: 20px;
   font-weight: 300;
   line-height: 1.4em; }
@@ -13533,16 +13531,26 @@ footer a:hover {
 footer a:link {
   color: #999; }
 
-  .card-block {
-  overflow-x:hidden;
-}
+.card-block {
+  overflow-x: hidden; }
 
 footer .footer {
-  display: flex;
-}
+  display: flex; }
 
 @media only screen and (max-width: 600px) {
   footer .footer {
-      display: block;
-  }
-}
+    display: flex-wrap; } }
+
+.hero .clr-row {
+  margin-bottom: 24px; }
+
+.card-text p, .card-block p {
+  font-size: 1.2em;
+  font-weight: 300; }
+
+.card-title {
+  font-size: 1.6em; }
+
+body p {
+  line-height: 1.7em;
+  font-size: 1em; }

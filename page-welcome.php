@@ -7,15 +7,21 @@
     <div class="clr-col-12">
       <img src="<?php echo get_template_directory_uri() ?>/assets/images/big-logo.svg" style="height:400px; max-width:80vw; max-height: 60vh; margin-bottom: 40px" />
     </div>
+    </div>
 
+    <div class="clr-row">
     <div class="clr-col clr-col-sm-6 clr-offset-sm-3">
       <?php bloginfo('description'); ?>
     </div>
+    </div>
 
+    <div class="clr-row">
     <div class="clr-col clr-col-sm-6 clr-offset-sm-3">
       Bitte beachte: Wir führen nur Iniativen auf, die ihre (selbst) produzierten Artikel kostenlos oder zum Selbstkostenpreis anbieten.
     </div>
+    </div>
 
+    <div class="clr-row">
     <div class="clr-col clr-col-sm-6 clr-offset-sm-3">
       <a target="_blank" href="https://twitter.com/search?q=%23makervsvirus" class="hero">#MakerVsVirus</a>
     </div>

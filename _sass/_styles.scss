@@ -6,6 +6,8 @@ Version: 0.0.1
 Tags: 
 */
 
+$clr-font: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+$clr-font-base-size: 1.38em;
 @import "./../node_modules/@clr/ui/src/main.scss";
 // @import "./../node_modules/@clr/ui/src/dark-theme.scss";
 
@@ -26,8 +28,7 @@ Tags:
     color: #ffffff;
     text-align: center;
     padding-top: 50px;
-
-    font-size: 1.38em;
+    font-size: 1.58em;
     margin-bottom: 20px;
     font-weight: 300;
     line-height: 1.4em;
@@ -80,3 +81,20 @@ footer .footer {
         display: flex-wrap;
     }
   }
+
+.hero .clr-row {
+    margin-bottom: 24px;
+}
+
+.card-text p, .card-block p {
+    font-size: 1.2em;
+    font-weight:300;
+}
+.card-title {
+    font-size: 1.6em;
+}
+
+body p {
+    line-height: 1.7em;
+    font-size: 1em;
+}
