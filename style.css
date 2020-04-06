@@ -13609,3 +13609,6 @@ body p {
 
 .mapcol iframe {
   pointer-events: none; }
+
+section.hero {
+  padding: 15px 15px 15px 15px; }
