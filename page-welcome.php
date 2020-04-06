@@ -153,5 +153,11 @@
 </div>
 
 
-
+<script>
+  if(window.location.hash) {
+    if(window.location.hash == "#need" || window.location.hash == "#maker" || window.location.hash == "#donate") {
+      document.location.href = "/"+window.location.hash.substr(1);
+    }
+  }
+</script>
 <?php get_footer() ?>
