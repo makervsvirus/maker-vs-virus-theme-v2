@@ -11,7 +11,7 @@
 									<a href="/privacy/" class="text-white">Datenschutz</a>
 								</div>
 								<div class="" style="margin: 0.5rem; width: 100%;">
-									<a href="/conducts/" class="text-white">Code of Conduct</a>
+									<a href="/codeofconduct/" class="text-white">Code of Conduct</a>
 								</div>
 								<div class="" style="margin: 0.5rem; width: 100%;">
 									<a href="/faq/" class="text-white">FAQ</a>
