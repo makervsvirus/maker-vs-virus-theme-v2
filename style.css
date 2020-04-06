@@ -13554,3 +13554,44 @@ footer .footer {
 body p {
   line-height: 1.7em;
   font-size: 1em; }
+
+@media only screen and (max-width: 600px) {
+  .clr-form-resp .clr-control-container {
+    width: 100%; }
+    .clr-form-resp .clr-control-container .clr-input-wrapper {
+      width: 100%; }
+      .clr-form-resp .clr-control-container .clr-input-wrapper .clr-input, .clr-form-resp .clr-control-container .clr-input-wrapper .clr-textarea {
+        width: 100%; }
+  .clr-textarea {
+    width: 100%; } }
+
+@media only screen and (min-width: 601px) {
+  .clr-control-container {
+    width: 100%; }
+    .clr-control-container .clr-input-wrapper {
+      width: 100%; }
+      .clr-control-container .clr-input-wrapper .clr-input, .clr-control-container .clr-input-wrapper .clr-textarea {
+        width: 100%; }
+  .clr-textarea {
+    width: 100%; }
+  .clr-form-resp .clr-form-control > .clr-control-label {
+    width: 9.6rem;
+    min-width: 9.6rem; }
+  .clr-form-resp .clr-form-control.clr-row > .clr-control-label {
+    width: auto;
+    min-width: auto; }
+  .clr-form-resp .clr-control-label {
+    margin-top: 0.15rem; }
+  .clr-form-resp .clr-form-control {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6rem; }
+  .clr-form-resp .clr-control-container {
+    display: flex; }
+  .clr-form-resp .clr-subtext {
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem; }
+  .clr-form-resp .clr-subtext-wrapper {
+    flex-basis: auto;
+    display: inline-block; } }
