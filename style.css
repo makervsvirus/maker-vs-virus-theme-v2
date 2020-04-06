@@ -13606,3 +13606,6 @@ body p {
 .card {
   border: none;
   box-shadow: none; }
+
+.mapcol iframe {
+  pointer-events: none; }

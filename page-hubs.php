@@ -1,17 +1,12 @@
 <?php get_header(); ?>
 
 <div class="bg-white">
-
     <div class="clr-row" style="">
-        <div class="clr-col">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700"></iframe>
+        <div class="clr-col clr-col-sm-8 clr-offset-sm-2 mapcol">
+        <h1>Alle Hubs</h1>
+            <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700" style="border:none"></iframe>
         </div>
     </div>
-
-
-    <?php // require 'includes/map.php' 
-    ?>
-
 
     <?php
 
@@ -24,20 +19,11 @@
 
     ?>
 
-
-    <div class="content-container">
-        <div class="content-area">
-            <div class="clr-row">
-                <div class="clr-col-lg-8 clr-offset-lg-2">
-
-                    <?php require 'includes/hub-table.php' ?>
-
-                </div>
+        <div class="clr-row">
+            <div class="clr-col-lg-8 clr-offset-lg-2">
+                <?php require 'includes/hub-table.php' ?>
             </div>
-
         </div>
     </div>
-</div>
-
 
 <?php get_footer(); ?>

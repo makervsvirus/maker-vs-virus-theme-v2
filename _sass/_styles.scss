@@ -174,3 +174,7 @@ body p {
     border: none;
     box-shadow: none;
 }
+
+.mapcol iframe{
+    pointer-events: none;
+}

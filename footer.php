@@ -25,8 +25,18 @@
 			</div>
 		</div>
 	    <script>
-			$(".header-hamburger-trigger").on("click", function() {
-				$(".main-container").toggleClass("open-hamburger-menu");
+			$(document).ready(function() {
+				$(".header-hamburger-trigger").on("click", function() {
+					$(".main-container").toggleClass("open-hamburger-menu");
+				});
+
+				$('.mapcol').click(function () {
+					$('.mapcol iframe').css("pointer-events", "auto");
+				});
+
+				$( ".mapcol" ).mouseleave(function() {
+					$('.mapcol iframe').css("pointer-events", "none"); 
+				});
 			});
 		</script>
 	</body>
