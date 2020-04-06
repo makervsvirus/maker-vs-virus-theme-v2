@@ -22,6 +22,8 @@ $clr-font-base-size: 1.38em;
 .bg-white {
     background-color: #fff;
     padding-bottom: 50px;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
 }
 
 .hero {
@@ -160,4 +162,15 @@ body p {
   .clr-form-resp .clr-subtext-wrapper {
     flex-basis: auto;
     display: inline-block; }
+}
+
+.main-container .content-container .content-area {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.card {
+    border: none;
+    box-shadow: none;
 }

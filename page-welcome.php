@@ -37,7 +37,7 @@
         <div class="card-img">
           <img src="<?php echo get_the_post_thumbnail_url($about_hubs); ?>">
         </div>
-        <div class="card-block" style="height:200px">
+        <div class="card-block" style="height:230px">
           <div class="card-title">
             <?php echo get_the_title($about_hubs); ?>
           </div>
@@ -65,7 +65,7 @@
         <div class="card-img">
           <img src="<?php echo get_the_post_thumbnail_url($about_makers); ?>">
         </div>
-        <div class="card-block" style="height:200px">
+        <div class="card-block" style="height:230px">
           <div class="card-title">
             <?php echo get_the_title($about_makers); ?>
           </div>
@@ -124,9 +124,9 @@
   </div>
 
   <div class="clr-row" style="margin-top: 2rem;">
-    <div class="clr-col">
+    <div class="clr-col clr-col-sm-8 clr-offset-sm-2">
 
-    <iframe src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700"></iframe>
+    <iframe class="card" src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700" style="border: none"></iframe>
 
       <?php // $show_makers = true; ?>
       <?php // include 'includes/map.php' ?>
