@@ -12,7 +12,7 @@
             <ul><li><b>Benutzername:</b> #username#</li>
             <li><b>Passwort:</b> #password#</li></ul>
             <p>Es ist geplant die Funktionen für die Hubs nach und nach zu erweitern.</p>
-            <p>Sofern noch nicht geschehen, kannst du dem Maker vs. Virus Slack unter <a href="https://join.slack.com/t/makervsvirus/shared_invite/zt-d78epuip-5c4U2EXbscuIIjflT~kAIQ">https://join.slack.com/t/makervsvirus/shared_invite/zt-d78epuip-5c4U2EXbscuIIjflT~kAIQ</a> beitreten.</p>
+            <p>Sofern noch nicht geschehen, kannst du dem Maker vs. Virus Slack unter <a href="https://makervsvirus.org/slack-link/">https://makervsvirus.org/slack-link/</a> beitreten.</p>
             <pp>Es grüßt dich, das Team von Maker vs. Virus</p>
         </div>
     </body>
