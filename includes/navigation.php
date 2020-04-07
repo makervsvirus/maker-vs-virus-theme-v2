@@ -17,11 +17,11 @@
         foreach ($menuitems as $item) :
             $title = $item->title;
             $link = $item->url;
+            if($item->menu_item_parent == 0) {
         ?>
-
             <a href="<?php echo $link; ?>" class="nav-link"><span class="nav-text"><?php echo $title; ?></span></a>
-
-        <?php endforeach; ?>
+        <?php }
+        endforeach; ?>
 
     </div>
     <div class="header-actions" style="margin-right: 1rem;">
