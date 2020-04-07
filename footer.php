@@ -1,20 +1,3 @@
-					<!-- footer>
-					<p class="footer-center">
-							<a href="/contact/">Kontakt</a>
-							|
-							<a href="/imprint/">Impressum</a>
-							|
-							<a href="/privacy/">Datenschutz</a>
-							|
-							<a href="/codeofconduct/">Code of Conduct</a>
-							|
-							<a href="/faq/">FAQ</a>
-						</p>
-
-						<p class="footer-company-name">Made with <span style="color:#ad0000;">&#10084;</span> by <a href="https://www.hammertimekassel.de/">Hammertime Kassel</a></p>
-
-					</footer -->
-
 					<footer class="page-footer font-small unique-color-dark pt-4">
 
 						<!-- Footer Elements -->
@@ -23,8 +6,7 @@
 							<!-- Call to action -->
 							<div class="list-unstyled list-inline text-center py-2">
 								<ul>
-									<li>
-										<a href="/contact/">Kontakt</a></li>
+									<li><a href="/contact/">Kontakt</a></li>
 									<li><a href="/imprint/">Impressum</a></li>
 									<li><a href="/privacy/">Datenschutz</a></li>
 									<li><a href="/codeofconduct/">Code of Conduct</a></li>
@@ -42,25 +24,23 @@
 						<!-- Copyright -->
 
 					</footer>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$(".header-hamburger-trigger").on("click", function() {
+					$(".main-container").toggleClass("open-hamburger-menu");
+				});
 
-					</div>
-					</div>
-					</div>
-					<script>
-						$(document).ready(function() {
-							$(".header-hamburger-trigger").on("click", function() {
-								$(".main-container").toggleClass("open-hamburger-menu");
-							});
+				$('.mapcol').click(function() {
+					$('.mapcol iframe').css("pointer-events", "auto");
+				});
 
-							$('.mapcol').click(function() {
-								$('.mapcol iframe').css("pointer-events", "auto");
-							});
-
-							$(".mapcol").mouseleave(function() {
-								$('.mapcol iframe').css("pointer-events", "none");
-							});
-						});
-					</script>
-					</body>
-
-					</html>
+				$(".mapcol").mouseleave(function() {
+					$('.mapcol iframe').css("pointer-events", "none");
+				});
+			});
+		</script>
+	</body>
+</html>
