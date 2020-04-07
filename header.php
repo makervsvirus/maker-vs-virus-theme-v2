@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.min.css">
 	<meta name="msapplication-TileColor" content="#4182e4">
 	<meta name="theme-color" content="#ffffff">
-
+	<?php wp_head(); ?>
 </head>
 
 <body>
