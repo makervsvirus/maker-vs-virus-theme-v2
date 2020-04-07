@@ -13653,4 +13653,13 @@ footer ul li a {
   display: inline-flex; }
 
 footer ul li a:hover {
-  background-color: #111111; }
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none; }
+
+header.header-6 {
+  border-bottom: solid 1px #608ee0;
+  background-color: #4182e4 !important; }
+
+a.nav-link:hover {
+  background: white !important;
+  color: #4182e4 !important; }
