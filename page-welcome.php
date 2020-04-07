@@ -53,7 +53,7 @@
         </div>
         <div class="card-footer">
           <a href="/hub-registration">
-            <button class="btn btn-sm btn-link">Hub registrieren</button>
+            <button class="btn btn-sm">Hub registrieren</button>
           </a>
         </div>
       </div>
@@ -81,7 +81,7 @@
         </div>
         <div class="card-footer">
           <!-- <a href="/maker-registration"> -->
-            <button class="btn btn-sm btn-link" disabled>Maker registrieren (noch nicht verfügbar)</button>
+            <button class="btn btn-sm" disabled>Maker registrieren (noch nicht verfügbar)</button>
           <!-- </a> -->
         </div>
       </div>
