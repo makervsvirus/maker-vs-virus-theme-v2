@@ -241,7 +241,18 @@ footer ul {
     background-color: #4182e4 !important;
   }
   
-  a.nav-link:hover {
+  .clr-nav-level-1 a.nav-link:hover {
       background: white !important;
       color: #4182e4 !important;
   }
+.card-block h1 {
+    font-size: 2.7em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card-block h2 {
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
+}
