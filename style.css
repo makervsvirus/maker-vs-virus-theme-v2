@@ -13612,3 +13612,64 @@ body p {
 
 section.hero {
   padding: 15px 15px 15px 15px; }
+
+.bg-white {
+  min-height: 100%; }
+
+footer {
+  background: #2b2b40;
+  line-height: 30px; }
+
+footer.page-footer {
+  bottom: 0;
+  color: #fff; }
+
+footer.page-footer .container-fluid {
+  width: auto; }
+
+footer.page-footer .footer-copyright {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.2); }
+
+footer.page-footer a {
+  color: #fff; }
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+footer ul li {
+  display: inline;
+  text-align: center; }
+
+footer ul li a {
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  display: inline-flex; }
+
+footer ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none; }
+
+header.header-6 {
+  border-bottom: solid 1px #608ee0;
+  background-color: #4182e4 !important; }
+
+.clr-nav-level-1 a.nav-link:hover {
+  background: white !important;
+  color: #4182e4 !important; }
+
+.card-block h1 {
+  font-size: 2.7em;
+  font-weight: 300;
+  text-align: center; }
+
+.card-block h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  text-align: center; }
