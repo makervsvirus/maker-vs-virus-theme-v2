@@ -6,8 +6,10 @@
     <div class="">
         <div id="main" style="text-align:center">
             <br>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/filament-spool.png" style="height: 60vh">
-            <p>Tut uns leid, aber die Seite nach der du gesucht hast, wurde leider nicht gefunden.</p>
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/filament-spool.png" style="height: 40vh">
+            <h3>Tut uns leid, aber die Seite nach der du gesucht hast, wurde leider nicht gefunden.</h3>
+            <br/>
+            <a href="/">Hier geht es zurück zur Startseite</a>
         </div><!-- main -->
     </div><!-- main -->
 </div><!-- main -->
