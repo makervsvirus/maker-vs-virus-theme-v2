@@ -13596,6 +13596,9 @@ footer a:link {
   font-weight: 300;
   text-align: center; }
 
+.card-footer .btn {
+  max-width: 100%; }
+
 /* Footer
    ========================================================================== */
 footer .footer {
@@ -13748,5 +13751,24 @@ footer ul.socials a:hover i {
   .hero .mtmb .btn-group {
     display: grid; } }
 
-.card-footer .btn {
-  max-width: 100%; }
+/* ==========================================================================
+   Datable
+   ========================================================================== */
+table {
+  line-height: 1; }
+
+table pre {
+  background: none;
+  border: none;
+  font-family: inherit; }
+
+.dt-datahead {
+  font-weight: bold; }
+
+table.dataTable th, table.dataTable td {
+  font-size: 110% !important; }
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc {
+  background-image: none;
+  background-color: #4182e4;
+  color: white; }
