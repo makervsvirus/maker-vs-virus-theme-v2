@@ -32,7 +32,6 @@
 </head>
 
 <body>
-
 	<div class="main-container  bg-blue">
 		<?php require 'includes/navigation.php' ?>
 

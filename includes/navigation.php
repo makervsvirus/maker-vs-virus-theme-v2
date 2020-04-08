@@ -2,8 +2,7 @@
     <button type="button" class="header-hamburger-trigger" aria-label="Open"><span></span></button>
     <div class="branding">
         <a href="/" class="nav-link">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-small.png" style="height: 40px; margin-right: 1rem;" />
-            <span class="title">Maker vs. Virus</span>
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mvsv.svg" style="height: 40px; margin-right: 1rem;" />
         </a>
     </div>
     <div class="header-nav clr-nav-level-1">

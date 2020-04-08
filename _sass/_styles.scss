@@ -256,3 +256,10 @@ footer ul {
     font-weight: 300;
     text-align: center;
 }
+
+@media screen and (max-width: 576px) {
+.main-container .header .branding {
+    max-width: 8.2rem;
+    min-width: 0;
+    overflow: hidden;
+}}
