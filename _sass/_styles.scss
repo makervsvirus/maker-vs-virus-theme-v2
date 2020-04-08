@@ -305,3 +305,17 @@ footer ul {
     overflow: hidden;
 }
 }
+
+@media only screen and (min-width: 601px) {
+
+    #herospenden {
+        line-height: 60px
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .hero .mtmb .btn-group {
+        display: grid;
+    }
+}

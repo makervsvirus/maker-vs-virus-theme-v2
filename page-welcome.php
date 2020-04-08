@@ -20,6 +20,19 @@
       Bitte beachte: Wir führen nur Iniativen auf, die ihre (selbst) produzierten Artikel kostenlos oder zum Selbstkostenpreis anbieten.
     </div>
     </div>
+    <div class="clr-col clr-col-sm-6 clr-offset-sm-3 mtmb">
+          <div class="btn-group">
+            <a href="/hubs"class="btn-hero">
+              Ich habe Bedarf
+            </a>
+            <a href="/hub-registration" class="btn-hero">
+              Ich kann produzieren
+            </a>
+            <a href="/spenden"class="btn-hero" id="herospenden">
+              Spenden
+            </a>
+          </div>
+        </div>
 
     <div class="clr-row">
     <div class="clr-col clr-col-sm-6 clr-offset-sm-3">
