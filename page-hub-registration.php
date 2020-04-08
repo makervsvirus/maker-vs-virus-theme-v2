@@ -106,7 +106,7 @@
                         <div class="clr-form-control">
                             <label class="clr-control-label" for="hub_country"><?php _e('Land') ?></label>
                             <div class="clr-control-container">
-                                <div class="clr-input-wrapper"><input type="text" class="clr-input" id="hub_country" name="hub_country" placeholder="<?php _e('hub_country') ?>" /></div>
+                                <div class="clr-input-wrapper"><input type="text" class="clr-input" id="hub_country" name="hub_country" placeholder="<?php _e('Land') ?>" /></div>
                             </div>
                         </div>
 
