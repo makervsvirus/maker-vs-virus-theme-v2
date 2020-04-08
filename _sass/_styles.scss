@@ -326,7 +326,11 @@ footer ul.socials i {
   color: #333;
   text-align: center;
   font-size: 1.25rem;
-  line-height: 2.5rem;
+  line-height: 2.1rem;
+}
+
+footer ul.socials a:hover {
+    background:none;
 }
 
 footer ul.socials a:hover i {
