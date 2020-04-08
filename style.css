@@ -13492,6 +13492,11 @@ _:-ms-fullscreen .tab-content,
 .p-2 {
   padding: 0.5rem; }
 
+ul,
+ol {
+  list-style-position: outside !important;
+  margin-left: 16px; }
+
 .bg-blue {
   background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7; }
 
@@ -13679,6 +13684,3 @@ header.header-6 {
     max-width: 8.2rem;
     min-width: 0;
     overflow: hidden; } }
-
-ul {
-  list-style-position: outside; }

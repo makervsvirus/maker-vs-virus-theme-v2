@@ -15,6 +15,12 @@ $clr-font-base-size: 1.38em;
     padding: 0.5rem;
 }
 
+
+ul, ol {
+    list-style-position: outside !important;
+    margin-left: 16px;
+}
+
 .bg-blue {
     background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
 }
@@ -263,8 +269,4 @@ footer ul {
     min-width: 0;
     overflow: hidden;
 }
-}
-
-ul {
-    list-style-position: outside;
 }
