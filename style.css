@@ -13500,6 +13500,10 @@ _:-ms-fullscreen .tab-content,
   margin-top: 1em;
   margin-bottom: 1em; }
 
+body p {
+  line-height: 1.7em;
+  font-size: 1em; }
+
 .btn-hero {
   padding: 1em;
   background: rgba(255, 255, 255, 0.15);
@@ -13531,6 +13535,8 @@ ol {
   padding-left: 0.6rem;
   padding-right: 0.6rem; }
 
+/* Hero
+   ========================================================================== */
 .hero {
   color: #ffffff;
   text-align: center;
@@ -13563,9 +13569,35 @@ footer a:hover {
 footer a:link {
   color: #999; }
 
-.card-block {
-  overflow-x: hidden; }
+/* Cards
+   ========================================================================== */
+.card {
+  border: none;
+  word-wrap: break-word;
+  box-shadow: none; }
 
+.card.shadow {
+  box-shadow: 0 4px 6px rgba(159, 186, 214, 0.03), 0 1px 2px rgba(68, 107, 145, 0.3), 0 7px 14px rgba(84, 143, 232, 0.1); }
+
+.card-text p, .card-block p {
+  font-size: 1.2em;
+  font-weight: 300; }
+
+.card-title {
+  font-size: 1.6em; }
+
+.card-block h1 {
+  font-size: 2.7em;
+  font-weight: 300;
+  text-align: center; }
+
+.card-block h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  text-align: center; }
+
+/* Footer
+   ========================================================================== */
 footer .footer {
   display: flex; }
 
@@ -13575,17 +13607,6 @@ footer .footer {
 
 .hero .clr-row {
   margin-bottom: 24px; }
-
-.card-text p, .card-block p {
-  font-size: 1.2em;
-  font-weight: 300; }
-
-.card-title {
-  font-size: 1.6em; }
-
-body p {
-  line-height: 1.7em;
-  font-size: 1em; }
 
 @media only screen and (max-width: 600px) {
   .clr-form-resp .clr-control-container {
@@ -13632,10 +13653,6 @@ body p {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden; }
-
-.card {
-  border: none;
-  box-shadow: none; }
 
 .mapcol iframe {
   pointer-events: none; }
@@ -13694,16 +13711,6 @@ header.header-6 {
   background: white !important;
   color: #4182e4 !important; }
 
-.card-block h1 {
-  font-size: 2.7em;
-  font-weight: 300;
-  text-align: center; }
-
-.card-block h2 {
-  font-size: 2.2em;
-  font-weight: 300;
-  text-align: center; }
-
 @media screen and (max-width: 576px) {
   .main-container .header .branding {
     max-width: 8.2rem;
@@ -13713,3 +13720,6 @@ header.header-6 {
 @media only screen and (max-width: 850px) {
   .hero .mtmb .btn-group {
     display: grid; } }
+
+.card-footer .btn {
+  max-width: 100%; }

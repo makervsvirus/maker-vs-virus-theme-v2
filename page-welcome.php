@@ -46,7 +46,7 @@
 
     <?php $about_hubs = get_page_by_path('about_hubs'); ?>
     <div class="clr-col clr-col-sm-4 clr-offset-sm-2">
-      <div class="card">
+      <div class="card shadow">
         <div class="card-img">
           <img src="<?php echo get_the_post_thumbnail_url($about_hubs); ?>">
         </div>
@@ -74,7 +74,7 @@
 
     <?php $about_makers = get_page_by_path('about_makers'); ?>
     <div class="clr-col clr-col-sm-4">
-      <div class="card">
+      <div class="card shadow">
         <div class="card-img">
           <img src="<?php echo get_the_post_thumbnail_url($about_makers); ?>">
         </div>
