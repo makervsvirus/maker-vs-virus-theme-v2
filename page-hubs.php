@@ -38,6 +38,4 @@
 
 
 <script src="<?php echo get_template_directory_uri() ?>/js/hub-table.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/sp-1.0.1/datatables.min.css"/>
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/sp-1.0.1/datatables.min.js"></script>
 <?php get_footer(); ?>

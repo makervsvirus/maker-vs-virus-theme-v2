@@ -11,7 +11,9 @@
 	<!-- CUSTOM STYLES -->
 	<link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri() ?>/assets/styles/clr-icons.min.css" rel="stylesheet">
-	
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/sp-1.0.1/datatables.min.css"/>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/sp-1.0.1/datatables.min.js"></script>
+
 
 	<!--CLARITY ICONS DEPENDENCY: CUSTOM ELEMENTS POLYFILL-->
 	<script src="<?php echo get_template_directory_uri() ?>/assets/js/custom-elements.min.js"></script>
