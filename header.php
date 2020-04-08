@@ -31,6 +31,10 @@
 	<link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/assets/images/safari-pinned-tab.svg" color="#4182e4">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/brands.min.css">
+	
+	<meta name="google-site-verification" content="xS8QJX0WlXVwL2mfyQGM-fJE5rYrc5EqonRzcwEql9k" />
+	<meta name="google-site-verification" content="google-site-verification=xS8QJX0WlXVwL2mfyQGM-fJE5rYrc5EqonRzcwEql9k" />
+	
 	<meta name="msapplication-TileColor" content="#4182e4">
 	<meta name="theme-color" content="#ffffff">
 	<?php wp_head(); ?>
