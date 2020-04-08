@@ -13679,3 +13679,6 @@ header.header-6 {
     max-width: 8.2rem;
     min-width: 0;
     overflow: hidden; } }
+
+ul {
+  list-style-position: outside; }
