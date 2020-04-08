@@ -8,6 +8,11 @@
 								<ul class='socials centered-text'>
 									<li>
 										<a target="_blank" href='http://www.facebook.com/makerversusvirus'>
+											<i class="fab fa-slack"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href='http://www.facebook.com/makerversusvirus'>
 											<i class='fa fa-facebook'></i>
 										</a>
 									</li>
