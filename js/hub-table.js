@@ -1,6 +1,6 @@
   $(document).ready(function() {
     $('#data-table').DataTable({
-      "ajax": 'https://test.makervsvirus.org/wp-json/api/v1/hubs',
+      "ajax": '/wp-json/api/v1/hubs',
       "columns": [{
           "data": "hub_description",
           "title": "Description",
