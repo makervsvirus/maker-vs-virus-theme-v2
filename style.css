@@ -13710,6 +13710,6 @@ header.header-6 {
     min-width: 0;
     overflow: hidden; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .hero .mtmb .btn-group {
     display: grid; } }
