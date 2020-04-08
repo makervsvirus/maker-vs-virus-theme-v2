@@ -21,9 +21,23 @@
 
         <div class="clr-row">
             <div class="clr-col-lg-8 clr-offset-lg-2">
-                <?php require 'includes/hub-table.php' ?>
+
+
+              <div id="data-table-container">
+                <table id="data-table" class="table table-striped table-bordered" width="100%">
+                  <thead>
+                  </thead>
+                  <tfoot>
+                  </tfoot>
+                </table>
+              </div>
             </div>
         </div>
-    </div>
+</div>
 
+
+
+<script src="<?php echo get_template_directory_uri() ?>/js/hub-table.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/sp-1.0.1/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/sp-1.0.1/datatables.min.js"></script>
 <?php get_footer(); ?>
