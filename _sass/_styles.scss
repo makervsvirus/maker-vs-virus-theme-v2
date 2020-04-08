@@ -112,6 +112,7 @@ footer a:link {
 
 .card{
   word-wrap: break-word;
+  border: none;
   box-shadow: 0 4px 6px rgba(159, 186, 214,.03), 0 1px 2px rgba(68, 107, 145,.3), 0 7px 14px rgba(84, 143, 232,.1);
 }
 
@@ -121,6 +122,18 @@ footer a:link {
 }
 .card-title {
     font-size: 1.6em;
+}
+
+.card-block h1 {
+    font-size: 2.7em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card-block h2 {
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
 }
 
 footer .footer {
@@ -213,10 +226,6 @@ body p {
     overflow-x: hidden;
 }
 
-.card {
-    border: none;
-    box-shadow: none;
-}
 
 .mapcol iframe{
     pointer-events: none;
@@ -288,14 +297,3 @@ footer ul {
       background: white !important;
       color: #4182e4 !important;
   }
-.card-block h1 {
-    font-size: 2.7em;
-    font-weight: 300;
-    text-align: center;
-}
-
-.card-block h2 {
-    font-size: 2.2em;
-    font-weight: 300;
-    text-align: center;
-}
