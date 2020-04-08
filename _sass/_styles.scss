@@ -310,6 +310,33 @@ footer ul {
       color: #4182e4 !important;
   }
 
+footer ul.socials li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+footer ul.socials i {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #eee;
+  color: #333;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+footer ul.socials a:hover i {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: #F9CE06;
+}
+
 @media screen and (max-width: 576px) {
 .main-container .header .branding {
     max-width: 8.2rem;
