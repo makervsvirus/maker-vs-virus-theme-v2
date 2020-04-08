@@ -28,8 +28,8 @@
             <a href="/hub-registration" class="btn-hero">
               Ich kann produzieren
             </a>
-            <a href="/spenden"class="btn-hero" id="herospenden">
-              Spenden
+            <a href="/spenden"class="btn-hero">
+              Ich möchte Spenden
             </a>
           </div>
         </div>
