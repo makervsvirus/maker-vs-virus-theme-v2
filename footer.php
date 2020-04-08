@@ -7,7 +7,7 @@
 							<div class="list-unstyled list-inline text-center py-2">
 								<ul class='socials centered-text'>
 									<li>
-										<a target="_blank" href='http://www.facebook.com/makerversusvirus'>
+										<a target="_blank" href='https://join.slack.com/t/makervsvirus/shared_invite/zt-dc4er2jn-mLCTdNv2DbIenSDdtMRnow'>
 											<i class="fab fa-slack"></i>
 										</a>
 									</li>
