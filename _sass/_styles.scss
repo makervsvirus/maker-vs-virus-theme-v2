@@ -26,7 +26,7 @@ $white: #fafafa;
      margin-top: 1em;
      margin-bottom: 1em;
    }
-   
+
    body p {
        line-height: 1.7em;
        font-size: 1em;
@@ -149,6 +149,10 @@ footer a:link {
     font-size: 2.2em;
     font-weight: 300;
     text-align: center;
+}
+
+.card-footer .btn {
+    max-width: 100%;
 }
 
 /* Footer
@@ -355,6 +359,20 @@ footer ul.socials a:hover i {
     }
 }
 
-.card-footer .btn {
-    max-width: 100%;
-}
+/* ==========================================================================
+   Datable
+   ========================================================================== */
+
+   table{
+     line-height: 1;
+   }
+
+   table pre{
+     background: none;
+     border: none;
+     font-family: inherit;
+   }
+
+   .dt-datahead{
+     font-weight: bold;
+   }
