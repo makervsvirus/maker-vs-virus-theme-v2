@@ -1,6 +1,9 @@
   $(document).ready(function() {
     $('#data-table').DataTable({
       responsive: true,
+      "language": {
+        "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/German.json"
+      },
       "ajax": '/wp-json/api/v1/hubs',
       "columns": [
         {
