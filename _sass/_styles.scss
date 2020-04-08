@@ -1,15 +1,50 @@
 /*
 Theme Name: Maker Vs Virus Theme 2
 Author: Jonathan Günz
-Description: 
+Description:
 Version: 0.0.1
-Tags: 
+Tags:
 */
 
 $clr-font: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
 $clr-font-base-size: 1.38em;
 @import "./../node_modules/@clr/ui/src/main.scss";
 // @import "./../node_modules/@clr/ui/src/dark-theme.scss";
+
+$primary-blue: #4182e4;
+$white: #fafafa;
+
+/* ==========================================================================
+   General elements & side wide styles
+   ========================================================================== */
+   * {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+   }
+
+   .mtmb{
+     margin-top: 1em;
+     margin-bottom: 1em;
+   }
+
+   .btn-hero{
+     padding: 1em;
+     background: rgba(255,255,255,.15);
+     border: 1px solid rgba(255,255,255,.3);
+     color: #fff;
+     transition: all .2s ease-in-out;
+     font-size: 1.4em;
+   }
+
+   .btn-hero:hover{
+     background: $white;
+     border: 1px solid $white;
+     color: $primary-blue;
+     text-decoration: none;
+   }
+
+
+
 
 .p-2 {
     padding: 0.5rem;
@@ -144,27 +179,27 @@ body p {
     .clr-form-resp .clr-form-control > .clr-control-label {
     width: 9.6rem;
     min-width: 9.6rem; }
-  
+
   .clr-form-resp .clr-form-control.clr-row > .clr-control-label {
     width: auto;
     min-width: auto; }
-  
+
   .clr-form-resp .clr-control-label {
     margin-top: 0.15rem; }
-  
+
   .clr-form-resp .clr-form-control {
     display: flex;
     flex-direction: row;
     margin-top: 0.6rem; }
-  
+
   .clr-form-resp .clr-control-container {
     display: flex; }
-  
+
   .clr-form-resp .clr-subtext {
     display: inline-block;
     margin-top: 0.3rem;
     margin-left: 0.3rem; }
-  
+
   .clr-form-resp .clr-subtext-wrapper {
     flex-basis: auto;
     display: inline-block; }
@@ -221,14 +256,14 @@ footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;    
+    overflow: hidden;
   }
-  
+
   footer ul li {
     display: inline;
     text-align: center;
   }
-  
+
   footer ul li a {
     color: white;
     text-align: center;
@@ -236,7 +271,7 @@ footer ul {
     text-decoration: none;
     display: inline-flex;
   }
-  
+
   footer ul li a:hover {
     background-color: rgba(0, 0, 0, 0.2);
     text-decoration: none;
@@ -246,7 +281,7 @@ footer ul {
     border-bottom: solid 1px #608ee0;
     background-color: #4182e4 !important;
   }
-  
+
   .clr-nav-level-1 a.nav-link:hover {
       background: white !important;
       color: #4182e4 !important;
