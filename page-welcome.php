@@ -25,9 +25,9 @@
             <a href="/hubs"class="btn-hero">
               Ich habe Bedarf
             </a>
-            <a href="/hub-registration" class="btn-hero">
+            <!-- a href="/hub-registration" class="btn-hero disabled">
               Ich kann produzieren
-            </a>
+            </a -->
             <a href="/spenden"class="btn-hero">
               Ich möchte Spenden
             </a>
