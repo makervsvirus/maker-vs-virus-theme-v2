@@ -29,7 +29,7 @@
                 Zum Dashboard
             </a>
         <?php else : ?>
-            <a href="/sicherheitszugang/" class="nav-link" aria-label="settings">
+            <a href="/login/" class="nav-link" aria-label="settings">
                 Login
             </a>
         <?php endif; ?>
