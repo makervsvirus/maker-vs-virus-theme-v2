@@ -35,6 +35,17 @@
 	<meta name="google-site-verification" content="xS8QJX0WlXVwL2mfyQGM-fJE5rYrc5EqonRzcwEql9k" />
 	<meta name="google-site-verification" content="google-site-verification=xS8QJX0WlXVwL2mfyQGM-fJE5rYrc5EqonRzcwEql9k" />
 	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@MakervsvirusO">
+	<meta name="twitter:creator" content="@htks_de">
+	<meta name="twitter:title" content="<?= get_bloginfo("name"); ?>">
+	<meta name="twitter:description" content="<?= get_bloginfo("description"); ?>">
+	<meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/assets/images/header-card.png">
+	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/images/header-card.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="525">
+	<meta property="og:image:height" content="276">
+
 	<meta name="msapplication-TileColor" content="#4182e4">
 	<meta name="theme-color" content="#ffffff">
 	<?php wp_head(); ?>
