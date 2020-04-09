@@ -60,9 +60,9 @@
 
                         <?php $hub_zip = get_post_meta($post->ID, 'hub_zip', true); ?>
                         <div class="clr-form-control">
-                            <label class="clr-control-label" for="hub_zip"><?php _e('PLZ') ?></label>
+                            <label class="clr-control-label" for="hub_zip"><?php _e('PLZ *') ?></label>
                             <div class="clr-control-container">
-                                <div class="clr-input-wrapper"><input type="text" class="clr-input" id="hub_zip" name="hub_zip" value="<?php echo $hub_zip ?>" placeholder="<?php _e('PLZ') ?>" /></div>
+                                <div class="clr-input-wrapper"><input type="text" class="clr-input" id="hub_zip" name="hub_zip" value="<?php echo $hub_zip ?>" placeholder="<?php _e('PLZ') ?>" required /></div>
                             </div>
                         </div>
 
