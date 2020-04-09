@@ -48,6 +48,9 @@
 
 	<meta name="msapplication-TileColor" content="#4182e4">
 	<meta name="theme-color" content="#ffffff">
+
+	<meta name="build" content="2020-04-09-23-25">
+
 	<?php wp_head(); ?>
 </head>
 
