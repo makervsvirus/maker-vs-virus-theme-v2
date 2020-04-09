@@ -15,7 +15,10 @@
           "title": "Kontakt",
           "className": 'dt-body-left',
           "render": function(data, type, row) {
-            return "<a href='mailto:"+row["hub_email"]+"'>"+(row["hub_contact_person"]!=""?row["hub_contact_person"]:row["hub_name"])+"</a>";
+            $.link = $("<a>")
+                    .attr("href", "mailto:"+row["hub_email"])
+                    .text((row["hub_contact_person"]!=""?row["hub_contact_person"]:row["hub_name"]));
+            return $.link.html()
           }
         },
         {
@@ -34,6 +37,7 @@
             $.container.append(country);
 
             return $.container.html();
+          }
         },
         {
           "data": "hub_state",
