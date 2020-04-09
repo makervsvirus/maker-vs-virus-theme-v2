@@ -21,7 +21,37 @@
         {
           "data": "hub_city",
           "title": "Ort",
-          "className": 'dt-body-left'
+          "className": 'dt-body-left',
+          "render": function(data, type, row) {
+            $.container = $("<div>")
+            var zip = $("<p>").text(row["hub_zip"]);
+            var city = $("<p>").text(data);
+            var state = $("<p>").text(row["hub_state"]);
+            var country = $("<p>").text(row["hub_country"]);
+            $.container.append(zip);
+            $.container.append(city);
+            $.container.append(state);
+            $.container.append(country);
+
+            return $.container.html();
+        },
+        {
+          "data": "hub_state",
+          "title": "State",
+          "className": 'dt-body-left',
+          "visible": false
+        },
+        {
+          "data": "hub_country",
+          "title": "Country",
+          "className": 'dt-body-left',
+          "visible": false
+        },
+        {
+          "data": "hub_zip",
+          "title": "Postcode",
+          "className": 'dt-body-left',
+          "visible": false
         },
         {
           "data": "hub_offer",
