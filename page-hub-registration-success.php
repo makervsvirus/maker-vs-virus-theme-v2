@@ -5,7 +5,7 @@
 <?php
 
 $google_api_key = get_option('google_geocoding_api_key');
-$address = $_POST['hub_street'] . " " . $_POST["hub_zip"] . " " . $_POST["hub_city"] . " " . $_POST["hub_state"] . " " . $_POST["hub_country"];
+$address = wp_strip_all_tags($_POST['hub_street'] . " " . $_POST["hub_zip"] . " " . $_POST["hub_city"] . " " . $_POST["hub_state"] . " " . $_POST["hub_country"]);
 $url = "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&key=" . $google_api_key . "&address=" . urlencode($address);
 
 $header = array("Accept: application/json");
@@ -40,9 +40,9 @@ $u->add_role('author');
 
 $post_id = wp_insert_post(array(
     'post_author'           => $user_id,
-    'post_title'            => $_POST['hub_name'],
+    'post_title'            => wp_strip_all_tags($_POST['hub_name']),
     'post_type'             => 'mvv_hub',
-    'post_name'             => $_POST['hub_city'] . '_' . $_POST['hub_name']
+    'post_name'             => wp_strip_all_tags($_POST['hub_city']) . '_' . wp_strip_all_tags($_POST['hub_name'])
 ));
 
 
@@ -70,7 +70,7 @@ $fields = array(
 
 foreach ($fields as $field) {
     if (isset($_POST[$field])) {
-        update_post_meta($post_id, $field, $_POST[$field]);
+        update_post_meta($post_id, $field, wp_strip_all_tags($_POST[$field]));
     }
 }
 
@@ -100,7 +100,7 @@ sendMail("hub", "welcome", "de", $_POST);
 
             <div class="clr-col-lg-8 clr-offset-lg-2 style=" margin-top: 1rem;">
 
-                <a href="https://join.slack.com/t/makervsvirus/shared_invite/zt-d0jrseye-16B4eZm1lkX~Hi8V7zFbiw" target="_blank">
+                <a href="/slack-link/" target="_blank">
                     <button class="btn btn-primary">Join Slack</button>
                 </a>
             </div>
