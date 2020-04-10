@@ -31,16 +31,22 @@
 	<link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/assets/images/safari-pinned-tab.svg" color="#4182e4">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/brands.min.css">
-	
+
 	<meta name="google-site-verification" content="xS8QJX0WlXVwL2mfyQGM-fJE5rYrc5EqonRzcwEql9k" />
 	<meta name="google-site-verification" content="google-site-verification=xS8QJX0WlXVwL2mfyQGM-fJE5rYrc5EqonRzcwEql9k" />
-	
+
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@MakervsvirusO">
 	<meta name="twitter:creator" content="@htks_de">
 	<meta name="twitter:title" content="<?= get_bloginfo("name"); ?>">
 	<meta name="twitter:description" content="<?= get_bloginfo("description"); ?>">
 	<meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/assets/images/header-card.png">
+
+	<meta property="og:site_name" content="<?= get_bloginfo("name"); ?>">
+	<meta property="og:title" content="<?= get_bloginfo("name"); ?>">
+	<meta property="og:locale" content="de">
+	<meta property="og:description" content="<?= get_bloginfo("description"); ?>">
+	<meta property="og:url" content="<?= the_permalink(); ?>">
 	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/images/header-card.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="525">
