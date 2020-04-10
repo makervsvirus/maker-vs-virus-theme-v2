@@ -74,7 +74,7 @@ function sendMail($type, $template, $lang, $variables) {
   $headers = array('Content-Type: text/html; charset=UTF-8');
   $tplContent = file_get_contents(get_template_directory() . "/emails/" . $type. "_". $template . "_" . $lang . ".tpl");
   foreach ($variables as $key => $value) {
-    $tplContent = str_replace("#" . str_replace($type . "_", "", $key) . "#", $value, $tplContent);
+    $tplContent = str_replace("#" . str_replace($type . "_", "", $key) . "#", wp_strip_all_tags($value), $tplContent);
   }
   $subject = substr($tplContent, strpos($tplContent, "<title>") + 7); $subject = substr($subject, 0, strpos($subject, "</"));
   wp_mail($variables[$type.'_email'], $subject, $tplContent, $headers);

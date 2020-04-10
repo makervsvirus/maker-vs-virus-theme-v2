@@ -5,7 +5,7 @@
 <?php
 
 $google_api_key = get_option('google_geocoding_api_key');
-$address = $_POST['maker_street'] . " " . $_POST["maker_zip"] . " " . $_POST["maker_city"] . " " . $_POST["maker_state"] . " " . $_POST["maker_country"];
+$address = wp_strip_all_tags($_POST['maker_street'] . " " . $_POST["maker_zip"] . " " . $_POST["maker_city"] . " " . $_POST["maker_state"] . " " . $_POST["maker_country"]);
 $url = "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&key=" . $google_api_key . "&address=" . urlencode($address);
 
 $header = array("Accept: application/json");
@@ -37,15 +37,15 @@ $u->add_role('author');
 
 $post_id = wp_insert_post(array(
     'post_author'           => $user_id,
-    'post_title'            => $_POST['maker_name'],
+    'post_title'            => wp_strip_all_tags($_POST['maker_name']),
     'post_type'             => 'mvv_maker',
-    'post_name'             => $_POST['maker_name'],
-    'post_content'          => isset( $_POST['maker_description'] ) ? $_POST['maker_description'] : null
+    'post_name'             => wp_strip_all_tags($_POST['maker_name']),
+    'post_content'          => isset( $_POST['maker_description'] ) ? wp_strip_all_tags($_POST['maker_description']) : null
 ));
 
 
-update_post_meta($post_id, "maker_lat", $lat);
-update_post_meta($post_id, "maker_long", $long);
+update_post_meta($post_id, "maker_lat", wp_strip_all_tags($lat));
+update_post_meta($post_id, "maker_long", wp_strip_all_tags($long));
 
 
 $fields = array(
@@ -64,7 +64,7 @@ $fields = array(
 
 foreach ($fields as $field) {
     if (isset($_POST[$field])) {
-        update_post_meta($post_id, $field, $_POST[$field]);
+        update_post_meta($post_id, $field, wp_strip_all_tags($_POST[$field]));
     }
 }
 
@@ -93,7 +93,7 @@ sendMail("maker", "welcome", "de", $_POST);
 
             <div class="clr-col-lg-8 clr-offset-lg-2 style=" margin-top: 1rem;">
 
-                <a href="https://join.slack.com/t/makervsvirus/shared_invite/zt-d0jrseye-16B4eZm1lkX~Hi8V7zFbiw" target="_blank">
+                <a href="/slack-link/" target="_blank">
                     <button class="btn btn-primary">Join Slack</button>
                 </a>
 
