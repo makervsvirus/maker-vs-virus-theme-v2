@@ -50,7 +50,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="build" content="2020-04-09-23-25">
-
+	<title><?= get_bloginfo("name"); ?><?= wp_title("|", false) ?></title>
 	<?php wp_head(); ?>
 </head>
 
