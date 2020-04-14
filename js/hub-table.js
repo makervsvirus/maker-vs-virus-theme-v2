@@ -11,18 +11,14 @@
           "title": "Name",
           "className": 'dt-body-left',
           "render": function(data, type, row) {
-            $.link = $("<a>")
-                    .attr("href", "/mvv_hub/?p="+row["hub_id"])
-                    .text(row["hub_name"]);
-            return $.link.html()
+            return "<a href='/mvv_hub/?p="+row["hub_id"]+"'>"+row["hub_name"]+"</a>";
           }
         },{
           "data": "hub_contact_person",
           "title": "Kontakt",
           "className": 'dt-body-left',
           "render": function(data, type, row) {
-            $.link = $("<p>").text((row["hub_contact_person"]!=""?row["hub_contact_person"]:row["hub_name"]));
-            return $.link.html()
+            return (row["hub_contact_person"]!=""?row["hub_contact_person"]:row["hub_name"]);
           }
         },
         {
