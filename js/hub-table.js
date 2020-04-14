@@ -9,16 +9,16 @@
         {
           "data": "hub_name",
           "title": "Name",
-          "className": 'dt-body-left'
+          "className": 'dt-body-left',
+          "render": function(data, type, row) {
+            return "<a href='/mvv_hub/?p="+row["hub_id"]+"'>"+row["hub_name"]+"</a>";
+          }
         },{
-          "data": "hub_capacity",
+          "data": "hub_contact_person",
           "title": "Kontakt",
           "className": 'dt-body-left',
           "render": function(data, type, row) {
-            $.link = $("<a>")
-                    .attr("href", "mailto:"+row["hub_email"])
-                    .text((row["hub_contact_person"]!=""?row["hub_contact_person"]:row["hub_name"]));
-            return $.link.html()
+            return (row["hub_contact_person"]!=""?row["hub_contact_person"]:row["hub_name"]);
           }
         },
         {
