@@ -13,7 +13,8 @@
   </div>
   <div class="clr-row" style="">
     <div class="clr-col clr-col-sm-8 clr-offset-sm-2 mapcol">
-      <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700" style="border:none"></iframe>
+      <!-- <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=1Sc7ZRpHDt-98-SCrfmRuFZNbLtF3I-uf" width="100%" height="700" style="border:none"></iframe> -->
+      <?php include 'includes/map.php' ?>
     </div>
   </div>
 

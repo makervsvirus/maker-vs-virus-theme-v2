@@ -64,10 +64,24 @@ if (isset($show_makers)) :
     ));
 endif;
 
+
+
+$other_areas_str = "";
+foreach ($hubs as $hub) :
+    $other_hub_areas = get_post_meta($hub->ID, 'hub_areas', true);
+    $areas = array_filter(explode(",", $other_hub_areas));
+    foreach ($areas as $area) {
+        $other_areas_str .= "'" . trim($area) . "',";
+    }
+endforeach;
+
+$other_areas_str = trim($other_areas_str, ",");
 ?>
 
 
 <script>
+    let areas = [<?php echo $other_areas_str; ?>];
+
     var hubs = [
         <?php foreach ($hubs as $hub) : ?> {
                 lat: "<?php echo get_post_meta($hub->ID, 'hub_lat', true) ?>",
@@ -129,9 +143,36 @@ endif;
             accessToken: 'pk.eyJ1IjoiaGFybW9uaWVtYW5kIiwiYSI6ImNqYnMweG9rOTB5NGwycW1mZ3M1M3g2bGkifQ.BWxSwxb35Ed-MfVNkquz2w'
         }).addTo(map);
 
-        L.geoJSON(counties.responseJSON, {
-            onEachFeature: onEachFeature
-        }).addTo(map);
+
+        counties.responseJSON.features.forEach(feature => {
+
+            let color = 'rgb(52, 155, 235)';
+            let opacity = 0.2;
+
+            if (areas.find(m => m == feature.properties.DEBKG_ID)) {
+                color = 'green';
+                opacity = 0.4;
+            }
+
+
+            L.geoJSON(feature, {
+                onEachFeature: onEachFeature,
+                style: {
+                    weight: 1,
+                    color: '#fff',
+                    dashArray: '',
+                    fillOpacity: opacity,
+                    fillColor: color
+                }
+            }).addTo(map);
+        });
+
+
+
+
+
+
+
 
         <?php if (isset($show_makers)) : ?>
             var greenIcon = L.icon({
@@ -153,8 +194,8 @@ endif;
         var redIcon = L.icon({
             iconUrl: '<?php echo get_template_directory_uri() ?>/assets/images/marker-hub.png',
 
-            iconSize: [30, 30], // size of the icon
-            iconAnchor: [30, 30], // point of the icon which will correspond to marker's location
+            iconSize: [23, 30], // size of the icon
+            iconAnchor: [23, 30], // point of the icon which will correspond to marker's location
             popupAnchor: [-15, -30] // point from which the popup should open relative to the iconAnchor
         });
 
