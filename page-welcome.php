@@ -29,7 +29,7 @@
               Ich kann produzieren
             </a -->
             <a href="/spenden"class="btn-hero">
-              Ich möchte Spenden
+              Ich möchte spenden
             </a>
           </div>
         </div>
