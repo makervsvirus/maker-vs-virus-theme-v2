@@ -144,6 +144,7 @@
       <?php // $show_makers = true; ?>
       <?php include 'includes/map.php' ?>
 
+      <h3 style="text-align:center">&gt;&gt; <a href="/hubs/#data-table-container">Hier geht es zur Liste aller Hubs und zur Suche</a> &lt;&lt;</h3>
     </div>
   </div>
 
