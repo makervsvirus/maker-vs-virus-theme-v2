@@ -88,7 +88,8 @@ $other_areas_str = trim($other_areas_str, ",");
                 long: "<?php echo get_post_meta($hub->ID, 'hub_long', true) ?>",
                 data: {
                     name: "<?php echo get_the_title($hub->ID) ?>",
-                    permalink: "<?php echo get_permalink($hub->ID) ?>"
+                    permalink: "<?php echo get_permalink($hub->ID) ?>",
+                    areas: "<?php echo get_post_meta($hub->ID, 'hub_areas', true) ?>",
                 }
             },
         <?php endforeach; ?>
@@ -108,16 +109,26 @@ $other_areas_str = trim($other_areas_str, ",");
     <?php endif; ?>
 
 
-    function whenClicked(e, feature, layer) {
-        // e = event
-        console.log(feature);
+    function onCountyClicked(e, feature, layer) {
+        //console.log(feature);
+
+        hubs.forEach(hub => {
+            hub.popup.closePopup();
+        });
+
+        hubs.forEach(hub => {
+            if (hub.data.areas.indexOf(feature.properties.DEBKG_ID) > -1) {
+                hub.popup.openPopup();
+                //console.log(hub);
+            }
+        });
     }
 
     function onEachFeature(feature, layer) {
         //bind click
         layer.on({
             click: (e) => {
-                whenClicked(e, feature, layer);
+                onCountyClicked(e, feature, layer);
             }
         });
     }
@@ -125,7 +136,7 @@ $other_areas_str = trim($other_areas_str, ",");
     var counties = $.ajax({
         url: "<?php echo get_template_directory_uri() ?>/assets/geojson/de.geojson",
         dataType: "json",
-        success: console.log("County data successfully loaded."),
+        success: function() {},
         error: function(xhr) {
             alert(xhr.statusText)
         }
@@ -200,13 +211,13 @@ $other_areas_str = trim($other_areas_str, ",");
         });
 
         hubs.forEach(hub => {
-            var marker = L.marker([hub.lat, hub.long], {
+            hub.marker = L.marker([hub.lat, hub.long], {
                     icon: redIcon
                 })
                 .addTo(map);
 
             var customPopup = "<span style='font-size: bold;'>" + hub.data.name + "</span><br /> <a href='" + hub.data.permalink + "'>Details anzeigen</a>";
-            marker.bindPopup(customPopup);
+            hub.popup = hub.marker.bindPopup(customPopup, {closeOnClick: false, autoClose: false});
         });
 
 
