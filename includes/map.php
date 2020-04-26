@@ -110,7 +110,7 @@ $other_areas_str = trim($other_areas_str, ",");
 
 
     function onCountyClicked(e, feature, layer) {
-        console.log(feature);
+        //console.log(feature);
 
         hubs.forEach(hub => {
             hub.popup.closePopup();
@@ -119,7 +119,7 @@ $other_areas_str = trim($other_areas_str, ",");
         hubs.forEach(hub => {
             if (hub.data.areas.indexOf(feature.properties.DEBKG_ID) > -1) {
                 hub.popup.openPopup();
-                console.log(hub);
+                //console.log(hub);
             }
         });
     }
@@ -136,7 +136,7 @@ $other_areas_str = trim($other_areas_str, ",");
     var counties = $.ajax({
         url: "<?php echo get_template_directory_uri() ?>/assets/geojson/de.geojson",
         dataType: "json",
-        success: console.log("County data successfully loaded."),
+        success: function() {},
         error: function(xhr) {
             alert(xhr.statusText)
         }
