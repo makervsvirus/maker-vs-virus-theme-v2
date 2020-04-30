@@ -18,7 +18,7 @@
     "@clr/ui": "^3.0.1",
     "@webcomponents/custom-elements": "^1.0.0",
     "bootstrap": "^4.3.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.12.0"
   }
 }
